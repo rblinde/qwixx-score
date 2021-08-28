@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+:root {
+  --grey: #e5e5e5;
+  --red: #ef476f;
+  --yellow: #ffd166;
+  --green: #06d6a0;
+  --blue: #118ab2;
+}
+
+/* Colors */
+.red {
+  background-color: var(--red);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.green {
+  background-color: var(--green);
+}
+
+.blue {
+  background-color: var(--blue);
+}
+
+/* main structure */
+html,
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+
+body {
+  margin: 0;
+  background-color: var(--grey);
+}
+
+.container {
+  padding: 4px;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+/* rows */
+.row {
+  padding: 4px;
+  margin-bottom: 4px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 4px;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+/* checkboxes */
+.number label {
+  position: relative;
+
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5rem;
+  color: #000000;
+  border-radius: 8px;
+  border: 1px solid #000000;
+}
+
+.number svg {
+  fill: currentColor;
+}
+
+.number input {
+  display: none;
+}
+
+.number input:checked + label::after {
+  content: "✗";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  font-size: 3rem;
+  transform: translate(-50%, -50%);
+}
+
+/* score fields */
+.score {
+  position: relative;
+  display: flex;
+  padding: 4px;
+  align-items: center;
+  justify-content: center;
+  background-color: #c1c1c1;
+}
+
+.field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 3rem;
+  height: 2rem;
+  margin: 0 2px;
+
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.field.wrong {
+  background: #a2a2a2;
+}
+
+.field.total {
+  background: #ffffff;
+}
+
+/* reset button */
+.reset {
+  position: absolute;
+  right: 8px;
+}
