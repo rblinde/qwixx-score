@@ -22,7 +22,7 @@ When in the `qwixx-score` directory, run:
 npm run start
 ```
 
-Open your webbrowser and go to `http://localhost:1234`.
+Open your webbrowser and go to `http://localhost:8080`.
 
 ## License
 

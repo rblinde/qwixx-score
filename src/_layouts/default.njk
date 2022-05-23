@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="description" content="App to note scores for a game of Qwixx" />
+    <title>Qwixx Scoreboard</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      {{- content|safe -}}
+
+      {%- include "score.html" -%}
+    </div>
+    <script src="/scripts/index.js"></script>
+  </body>
+</html>

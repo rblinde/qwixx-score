@@ -90,11 +90,14 @@ class App {
 
     for (const checkbox of this.checkboxElems) {
       checkbox.checked = false;
-      checkbox.disabled = false;
     }
 
     this.updateDOM();
   }
 }
 
-export default App;
+const app = new App();
+app.start();
+
+const resetBtn = document.querySelector('.reset');
+resetBtn.addEventListener('click', () => app.start(), false);

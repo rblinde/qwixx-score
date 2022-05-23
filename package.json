@@ -2,19 +2,20 @@
   "name": "qwixx-score",
   "version": "1.0.0",
   "description": "App to note scores for a game of Qwixx",
-  "main": "src/index.js",
+  "author": "rblinde",
+  "homepage": "https://github.com/rblinde/qwixx-score#readme",
+  "license": "MIT",
   "scripts": {
-    "start": "parcel public/index.html",
-    "build": "parcel build --no-minify public/index.html"
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve"
   },
   "keywords": [
     "Qwixx",
     "game",
     "score"
   ],
-  "author": "rblinde",
-  "license": "MIT",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "@11ty/eleventy": "^1.0.1"
   }
 }
