@@ -179,7 +179,12 @@ body {
   background: #ffffff;
 }
 
-/* reset button */
+/* menu and reset button */
+.menu {
+  position: absolute;
+  left: 8px;
+}
+
 .reset {
   position: absolute;
   right: 8px;
