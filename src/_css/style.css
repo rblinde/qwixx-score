@@ -28,6 +28,22 @@
   background-color: var(--blue);
 }
 
+.red-mixed {
+  background: linear-gradient(to right, var(--yellow) 0 25%, var(--blue) 25% 50%, var(--green) 50% 75%, var(--red) 75% 100%);
+}
+
+.yellow-mixed {
+  background: linear-gradient(to right, var(--red) 0 16.666%, var(--green) 16.666% 50%, var(--blue) 50% 66.666%, var(--yellow) 66.666% 100%);
+}
+
+.green-mixed {
+  background: linear-gradient(to right, var(--blue) 0 25%, var(--yellow) 25% 50%, var(--red) 50% 75%, var(--green) 75% 100%);
+}
+
+.blue-mixed {
+  background: linear-gradient(to right, var(--green) 0 16.666%, var(--red) 16.666% 50%, var(--yellow) 50% 66.666%, var(--blue) 66.666% 100%);
+}
+
 /* main structure */
 html,
 body {
